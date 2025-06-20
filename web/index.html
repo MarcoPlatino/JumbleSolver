@@ -41,12 +41,13 @@
       background-color: #3498db;
       color: white;
       border: none;
-      padding: 0.6rem 1.2rem;
+      padding: 0.6rem 12px;
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: background-color 0.2s ease;
+      margin-left: 50px;
     }
 
     button:hover {
@@ -59,19 +60,45 @@
       padding: 1.5rem;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
       margin-top: 2rem;
-      max-width: 600px;
+      max-width: 500px;
     }
     </style>
-  </head>
-  <body>
+<body>
     <h1>Jumble Solver</h1>
-    <div class="random_number"></div>
-    <p><label for="jumbleSolve1">Enter the first word:</label></p>
-    <textarea id="jumbleSolve1" name="jumbleSolve1" rows="1" cols="25">
-
-    </textarea>
-  <br>
-  <input type="submit" value="Submit">
+    <form id="jumbleForm">
+      <div class="card">
+        <div class="input-row">
+          <label for="jumble1">Word 1:</label>
+          <input type="text" id="jumble1" name="jumble1" autocomplete="off" />
+          <button type="button" id="btn1">Unscramble</button>
+        </div>
+        <div class="result" id="result1"></div>
+      </div>
+      <div class="card">
+        <div class="input-row">
+          <label for="jumble2">Word 2:</label>
+          <input type="text" id="jumble2" name="jumble2" autocomplete="off" />
+          <button type="button" id="btn2">Unscramble</button>
+        </div>
+        <div class="result" id="result2"></div>
+      </div>
+      <div class="card">
+        <div class="input-row">
+          <label for="jumble3">Word 3:</label>
+          <input type="text" id="jumble3" name="jumble3" autocomplete="off" />
+          <button type="button" id="btn3">Unscramble</button>
+        </div>
+        <div class="result" id="result3"></div>
+      </div>
+      <div class="card">
+        <div class="input-row">
+          <label for="jumble4">Word 4:</label>
+          <input type="text" id="jumble4" name="jumble4" autocomplete="off" />
+          <button type="button" id="btn4">Unscramble</button>
+        </div>
+        <div class="result" id="result4"></div>
+      </div>
+    </form>
     <script type="text/javascript" src="../eel.js"></script>
     <script src="./script.js"></script>
   </body>
