@@ -6,25 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eel Example</title>
     <style>
-      h1{
-        color: green;
-        text-align: center;
-      }
-      .random_number{
-        margin: 50px;
-        font-size: 150px;
-        text-align: center;
-      }s
-      button{
-        display: block;
-        margin: 0 auto;
-      }
+/* Font import */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+      max-width: 600px;
+    }
     </style>
   </head>
   <body>
-    <h1>Geeks for Geeks</h1>
+    <h1>Jumble Solver</h1>
     <div class="random_number"></div>
-    <button>Get a Random number using Python</button>
+    <p><label for="jumbleSolve1">Enter the first word:</label></p>
+    <textarea id="jumbleSolve1" name="jumbleSolve1" rows="1" cols="25">
+
+    </textarea>
+  <br>
+  <input type="submit" value="Submit">
     <script type="text/javascript" src="../eel.js"></script>
     <script src="./script.js"></script>
   </body>
