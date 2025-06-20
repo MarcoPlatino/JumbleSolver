@@ -5,4 +5,4 @@ This uses a nice and simple Eel gui so that I can utilize the full capabilities 
 
 Don't try to unscramble the words, just use this instead.
 
-aha
+aha.
