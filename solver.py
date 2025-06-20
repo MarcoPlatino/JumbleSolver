@@ -28,4 +28,6 @@ def getWord(shuffle, g):
     for i in perm:
         if i in g:
             possibilities.append(i)
+    if len(possibilities) == 0:
+        return "You must have made a mistake; there are no words with these letters..."
     return ", ".join(possibilities)
