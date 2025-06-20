@@ -18,13 +18,14 @@ def makeintoset():
     g = set()
     for i in f:
         g.add(i.strip())
+    f.close()
     return g
 
 
 def getWord(shuffle, g):
     perm = ["".join(p) for p in set(permutations(shuffle))]
+    possibilities = []
     for i in perm:
         if i in g:
-            return i
-    return "You entered the word wrongus"
-
+            possibilities.append(i)
+    return ", ".join(possibilities)
