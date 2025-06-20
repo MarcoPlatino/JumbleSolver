@@ -16,12 +16,15 @@ def get(word):
 def makeintoset():
     f = open("words_alpha.txt")
     g = set()
-    for i in r:
-        g.add(i)
+    for i in f:
+        g.add(i.strip())
     return g
 
 
-def getWord(shuffle):
+def getWord(shuffle, g):
     perm = ["".join(p) for p in set(permutations(shuffle))]
-
+    for i in perm:
+        if i in g:
+            return i
+    return "You entered the word wrongus"
 
