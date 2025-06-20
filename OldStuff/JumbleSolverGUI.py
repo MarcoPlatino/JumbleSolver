@@ -1,6 +1,6 @@
 import solver
 import tkinter as tk
-import jumbleGuiCommands as jgc
+import OldStuff.jumbleGuiCommands as jgc
 
 # Preparing all of the window stuff
 root = tk.Tk()
