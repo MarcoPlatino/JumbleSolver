@@ -15,6 +15,7 @@ g = solver.makeintoset()
 @eel.expose
 def unScramble(word):
     print("Successful Call")
+    
     return solver.getWord(word, g)
 
 eel.start("index.html")
