@@ -5,7 +5,7 @@ import jumbleGuiCommands as jgc
 # Preparing all of the window stuff
 root = tk.Tk()
 root.title('Jumble Solver 😀😀😀')
-solver.makeintoset()
+g = solver.makeintoset()
 
 # Declaring variables
 word1 = tk.StringVar()
@@ -18,7 +18,7 @@ header.grid(row = 0, column= 1)
 def onSubmit():
     print("click!!!")
     scramble = word1.get()
-    answer = solver.getWord(scramble)
+    answer = solver.getWord(scramble, g)
     print(answer)
     answer1.config(text=answer)
     word1.set("")
