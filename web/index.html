@@ -10,39 +10,47 @@
 <body>
     <h1>Jumble Solver</h1>
     <form id="jumbleForm">
-      <div class="card">
+      <div class="card" id="card1">
         <div class="input-row">
           <label for="jumble1">Word 1:</label>
           <input type="text" id="jumble1" name="jumble1" autocomplete="off" />
-          <button type="button" id="btn1">Unscramble</button>
+          <button class="reg-btn" type="button" id="btn1">Unscramble</button>
         </div>
         <div class="result" id="result1"></div>
+        <div class="char-buttons" id="char-buttons1"></div>
       </div>
       <div class="card">
         <div class="input-row">
           <label for="jumble2">Word 2:</label>
           <input type="text" id="jumble2" name="jumble2" autocomplete="off" />
-          <button type="button" id="btn2">Unscramble</button>
+          <button class="reg-btn" type="button" id="btn2">Unscramble</button>
         </div>
         <div class="result" id="result2"></div>
+        <div class="char-buttons" id="char-buttons2"></div>
       </div>
       <div class="card">
         <div class="input-row">
           <label for="jumble3">Word 3:</label>
           <input type="text" id="jumble3" name="jumble3" autocomplete="off" />
-          <button type="button" id="btn3">Unscramble</button>
+          <button class="reg-btn" type="button" id="btn3">Unscramble</button>
         </div>
         <div class="result" id="result3"></div>
+        <div class="char-buttons" id="char-buttons3"></div>
       </div>
       <div class="card">
         <div class="input-row">
           <label for="jumble4">Word 4:</label>
           <input type="text" id="jumble4" name="jumble4" autocomplete="off" />
-          <button type="button" id="btn4">Unscramble</button>
+          <button class="reg-btn" type="button" id="btn4">Unscramble</button>
         </div>
         <div class="result" id="result4"></div>
+        <div class="char-buttons" id="char-buttons4"></div>
       </div>
     </form>
+    <div class = "card">
+      <a href="solveRiddle.html" class="big-btn">Solve the riddle</a>
+    </div>
+    
     <script type="text/javascript" src="../eel.js"></script>
     <script src="./script.js"></script>
   </body>

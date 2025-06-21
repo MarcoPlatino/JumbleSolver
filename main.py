@@ -12,10 +12,15 @@ g = solver.makeintoset()
 
 # # Start the index.html file
 
+
 @eel.expose
 def unScramble(word):
     print("Successful Call")
     
     return solver.getWord(word, g)
+
+@eel.expose
+def solve(letters):
+    return solver.solveJumble(letters, 5)
 
 eel.start("index.html")
