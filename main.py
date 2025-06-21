@@ -12,6 +12,7 @@ g = solver.makeintoset()
 
 # # Start the index.html file
 
+
 @eel.expose
 def unScramble(word):
     print("Successful Call")

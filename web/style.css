@@ -35,7 +35,8 @@ a:hover {
 }
 
 /* Buttons (neon style) */
-button, .reg-btn, .char-btn {
+button, .reg-btn{
+  margin: 30px;
   background: linear-gradient(145deg, #00c3ff, #0062ff);
   color: #fff;
   border: none;
@@ -62,6 +63,24 @@ button:hover, .reg-btn:hover, .char-btn:hover {
 
 .char-btn {
   margin-top: 30px;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+.char-btn.toggled {
+  background-color: rgba(255, 0, 68, 0.7);
+  background: linear-gradient(145deg, #fc0000, #ff3131);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(255, 0, 68, 0.6);
 }
 
 /* Card (glass style) */
