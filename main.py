@@ -18,4 +18,8 @@ def unScramble(word):
     
     return solver.getWord(word, g)
 
+@eel.expose
+def solve(letters):
+    return solver.solveJumble(letters)
+
 eel.start("index.html")

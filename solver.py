@@ -29,5 +29,8 @@ def getWord(shuffle, g):
         if i in g:
             possibilities.append(i)
     if len(possibilities) == 0:
-        return "You must have made a mistake; there are no words with these letters..."
-    return ", ".join(possibilities)
+        return []
+    return possibilities
+
+def solveJumble(letters):
+    print(letters)
