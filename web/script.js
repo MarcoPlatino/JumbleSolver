@@ -55,3 +55,7 @@ setupUnscramble("btn1", "jumble1", "result1", "char-buttons1");
 setupUnscramble("btn2", "jumble2", "result2", "char-buttons2");
 setupUnscramble("btn3", "jumble3", "result3", "char-buttons3");
 setupUnscramble("btn4", "jumble4", "result4", "char-buttons4");
+
+document.querySelector('.big-btn').onclick = function() {
+    sessionStorage.setItem("circleChars", JSON.stringify(circleChars));
+};
