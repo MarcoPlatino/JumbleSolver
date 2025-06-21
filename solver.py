@@ -32,5 +32,5 @@ def getWord(shuffle, g):
         return []
     return possibilities
 
-def solveJumble(letters):
+def solveJumble(letters, length):
     print(letters)

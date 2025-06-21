@@ -21,6 +21,6 @@ def unScramble(word):
 
 @eel.expose
 def solve(letters):
-    return solver.solveJumble(letters)
+    return solver.solveJumble(letters, 5)
 
 eel.start("index.html")

@@ -35,7 +35,7 @@ a:hover {
 }
 
 /* Buttons (neon style) */
-button, .reg-btn{
+button, .reg-btn, .big-btn{
   margin: 30px;
   background: linear-gradient(145deg, #00c3ff, #0062ff);
   color: #fff;
@@ -59,6 +59,21 @@ button:hover, .reg-btn:hover, .char-btn:hover {
 /* Specific positioning */
 .reg-btn {
   margin-left: 50px;
+}
+
+.big-btn{
+  margin: 15px;
+  background: linear-gradient(145deg, #00c3ff, #0062ff);
+  color: #fff;
+  border: none;
+  padding: 1rem 15rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .char-btn {
@@ -100,4 +115,27 @@ button:hover, .reg-btn:hover, .char-btn:hover {
 
 .card:hover {
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+select {
+  background: linear-gradient(145deg, #00c3ff, #0062ff);
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background: linear-gradient(145deg, #00e0ff, #007bff);
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.6);
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.8);
 }
