@@ -1,4 +1,4 @@
-import eel
+import eel # type: ignore
 import solver
 
 eel.init("web")  
